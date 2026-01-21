@@ -4,7 +4,7 @@ Data schema definitions for the AI Overviews staggered DiD project.
 These helpers document expected columns and types for the main datasets.
 """
 
-# Main panel schema (you can keep or adapt this if you already had EXPECTED_COLUMNS)
+# Main panel
 EXPECTED_COLUMNS = {
     "site_id": "str",
     "date": "datetime",
@@ -15,7 +15,7 @@ EXPECTED_COLUMNS = {
     "time": "int"                # period index
 }
 
-# Monthly traffic dataset ("monthly" type)
+# Monthly traffic dataset (European Commission)
 MONTHLY_TRAFFIC_SCHEMA = {
     "domain": "str",
     "country": "str",
@@ -25,7 +25,7 @@ MONTHLY_TRAFFIC_SCHEMA = {
     "mobile_marketing_channels_visits": "float",
 }
 
-# Weekly traffic dataset ("weekly" type)
+# Weekly traffic dataset (European Commission)
 WEEKLY_TRAFFIC_SCHEMA = {
     "domain": "str",
     "country": "str",
@@ -40,7 +40,7 @@ WEEKLY_TRAFFIC_SCHEMA = {
     "desktop_bounce_rate": "float",
 }
 
-# Wayback Machine / robots.txt scraping dataset
+# Wayback Machine / robots.txt scraping dataset (Personally collected)
 ROBOTS_SCRAPE_SCHEMA = {
     "domain": "str",
     "timestamp": "str",                   # Wayback timestamp string
@@ -57,7 +57,7 @@ ROBOTS_SCRAPE_SCHEMA = {
     "datetime": "datetime",               # human-readable timestamp
 }
 
-# Language detection dataset
+# Language detection dataset (Personally collected)
 LANGUAGE_DETECTION_SCHEMA = {
     "domain": "str",
     "category": "str",                    # e.g. AI_Chatbots_and_Tools
@@ -66,7 +66,7 @@ LANGUAGE_DETECTION_SCHEMA = {
     "detected_language": "str",           # e.g. 'en', 'fr', 'zh', 'connection_error'
 }
 
-# AI Mode release dates
+# AI Mode release dates (Personally collected)
 AI_MODE_RELEASE_SCHEMA = {
     "country": "str",
     "release_date": "date",
@@ -76,7 +76,7 @@ AI_MODE_RELEASE_SCHEMA = {
     "language_3": "str",
 }
 
-# AI Overviews release / wave info
+# AI Overviews release / wave info (Personally collected)
 AI_OVERVIEWS_RELEASE_SCHEMA = {
     "country": "str",
     "wave": "str",                        # e.g. 'Wave 1', 'Wave 2'
