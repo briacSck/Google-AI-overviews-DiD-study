@@ -208,5 +208,7 @@ __marimo__/
 # Project-specific ignores
 __pycache__/
 .ipynb_checkpoints/
-data/
+data/*
+!data/README.md
 .env
+
