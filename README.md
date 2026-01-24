@@ -18,14 +18,30 @@ How does the introduction of AI Overviews affect organic web traffic for affecte
 
 ## Repository Structure
 
-- `src/data_collection/`: Scripts to collect and preprocess traffic and treatment timing data.
-- `src/analysis/`: Estimation code for staggered DiD (ATT(g,t), aggregation, robustness).
-- `src/visualization/`: Figure and table generation (event-study plots, ATT summaries).
-- `data/raw/`: Unmodified input data (not tracked in Git).
-- `data/processed/`: Cleaned panel and analysis-ready datasets (not tracked in Git).
-- `notebooks/`: Exploratory analysis and sanity-check notebooks.
-- `tests/`: Minimal tests for key transformations and estimators.
-- `docs/`: Design notes, methodological choices, and replication instructions.
+.
+├── src/
+│   ├── data_collection/
+│   │   ├── scrape_robots_wayback.py    # Wayback Machine scraper
+│   │   ├── schema.py                   # Data schemas
+│   │   └── construct_panel.py          # Panel construction
+│   ├── analysis/
+│   │   └── R/
+│   │       ├── 01_staggered_did_weekly.R
+│   │       └── 02_channel_heterogeneity.R
+│   └── visualization/                  # (Planned)
+├── data/
+│   ├── raw/                            # Not tracked (proprietary)
+│   ├── processed/                      # Not tracked
+│   └── README.md                       # Data documentation
+├── docs/
+│   ├── identification_strategy.md      # Research design
+│   └── data_collection_guide.md        # Scraper documentation
+├── tests/
+│   ├── test_schema.py
+│   └── test_construct_panel.py         # (Planned)
+├── notebooks/                          # Exploratory analysis
+├── output/                             # Plots and tables
+└── README.md
 
 ## Stack
 
