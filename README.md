@@ -18,6 +18,7 @@ How does the introduction of AI Overviews affect organic web traffic for affecte
 
 ## Repository Structure
 
+```text
 .
 ├── src/
 │   ├── data_collection/
@@ -42,7 +43,7 @@ How does the introduction of AI Overviews affect organic web traffic for affecte
 ├── notebooks/                          # Exploratory analysis
 ├── output/                             # Plots and tables
 └── README.md
-
+```
 ## Stack
 
 Primarily Python (with DiD libraries) and/or R (e.g. `did`, `fixest`) for staggered DiD estimation.
