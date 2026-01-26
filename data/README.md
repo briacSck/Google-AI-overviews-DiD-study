@@ -27,9 +27,9 @@ data/
 
 ## Data Sources
 
-### 1. Similarweb Traffic Data
+### 1. Traffic Data
 
-**Provider:** Similarweb / European Commission
+**Provider:** Data Provider / European Commission
 **Coverage:** Top 2000 websites in US, GB, IE  
 **Time period:** January 2024 – December 2024  
 **Frequency:** Weekly and monthly
@@ -91,7 +91,7 @@ Expected columns (defined as `MONTHLY_TRAFFIC_SCHEMA`):
 
 ### Obtaining Data
 
-1. **Request access** from European Commission or Similarweb
+1. **Request access** from European Commission
 2. Place CSV files in `data/raw/` with exact filenames listed above
 3. Verify schema matches expected columns (see schemas above)
 
