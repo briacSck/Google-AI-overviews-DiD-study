@@ -24,7 +24,7 @@ Staggered across countries and time (May 2024 onwards):
 Websites (domains) indexed by Google, focusing on social media platforms and news sites.
 
 ### Outcome
-Weekly organic traffic visits (from Similarweb panel data).
+Weekly organic traffic visits.
 
 ---
 
@@ -144,7 +144,7 @@ If AI Overviews reduce click-through to websites (by answering queries directly)
 ## Data Requirements
 
 ### Traffic Data
-- Weekly/monthly panel from Similarweb or equivalent
+- Weekly/monthly panel
 - Columns: `domain`, `country`, `date`, `all_traffic_visits`, `channel` (for heterogeneity)
 
 ### Treatment Timing
