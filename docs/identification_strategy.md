@@ -71,18 +71,18 @@ We adopt modern staggered DiD approaches that avoid biases from heterogeneous tr
 
 ### Specification
 
-For site \( i \) in cohort \( g \) at time \( t \):
+For site \(i\) in cohort \(g\) at time \(t\):
 
 \[
 Y_{it} = \alpha_i + \lambda_t + \sum_{e \neq -1} \beta_e \cdot \mathbb{1}[t - G_i = e] + \epsilon_{it}
 \]
 
 where:
-- \( \alpha_i \): Site fixed effects
-- \( \lambda_t \): Time fixed effects
-- \( G_i \): Treatment date for site \( i \)
-- \( e \): Event time (periods relative to treatment)
-- \( \beta_e \): Dynamic treatment effect at event time \( e \)
+- \(\alpha_i\): Site fixed effects
+- \(\lambda_t\): Time fixed effects
+- \(G_i\): Treatment date for site \(i\)
+- \(e\): Event time (periods relative to treatment)
+- \(\beta_e\): Dynamic treatment effect at event time \(e\)
 
 ---
 
