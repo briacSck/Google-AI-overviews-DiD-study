@@ -1,6 +1,6 @@
 # AI Overviews – Staggered DiD Impact Study
 
-Staggered difference-in-differences analysis of the impact of Google's AI Overviews on website traffic. With data from the European Commission and personal data collection (scrapping).
+Staggered difference-in-differences analysis of the impact of Google's AI Overviews on website traffic. With data from a co-author working at/with the European Commission, and personal data collection (scrapping).
 
 ## Status
 
