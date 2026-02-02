@@ -29,7 +29,7 @@ data/
 
 ### 1. Traffic Data
 
-**Provider:** Data Provider / European Commission
+**Provider:** Co-Author working with/at the European Commission
 **Coverage:** Top 2000 websites in US, GB, IE  
 **Time period:** January 2024 – December 2024  
 **Frequency:** Weekly and monthly
@@ -88,12 +88,6 @@ Expected columns (defined as `MONTHLY_TRAFFIC_SCHEMA`):
 ---
 
 ## Data Preparation
-
-### Obtaining Data
-
-1. **Request access** from European Commission
-2. Place CSV files in `data/raw/` with exact filenames listed above
-3. Verify schema matches expected columns (see schemas above)
 
 ### Processing Pipeline
 
