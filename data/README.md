@@ -11,12 +11,12 @@ This directory contains raw and processed datasets for the AI Overviews impact s
 ```
 data/
 ├── raw/                    # Original unmodified data files
-│   ├── w_2000_mediaos_US.csv
-│   ├── w_2000_mediaos_GB.csv
-│   ├── w_2000_mediaos_IE.csv
-│   ├── m_2000_mediaos_US.csv
-│   ├── m_2000_mediaos_GB.csv
-│   └── m_2000_mediaos_IE.csv
+│   ├── w_2000_US.csv
+│   ├── w_2000_GB.csv
+│   ├── w_2000_IE.csv
+│   ├── m_2000_US.csv
+│   ├── m_2000_GB.csv
+│   └── m_2000_IE.csv
 ├── processed/              # Cleaned analysis-ready datasets
 │   ├── analysis_panel.csv
 │   └── robots_wayback_analysis.csv
