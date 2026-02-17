@@ -60,17 +60,17 @@ Expected columns (defined in `src/data_collection/schema.py` as `WEEKLY_TRAFFIC_
 
 | Column | Type | Description |
 |--------|------|-------------|
-| `domain` | string | Website domain (e.g., "reddit.com") |
+| `DNS` | string | Website domain (e.g., "reddit.com") |
 | `country` | string | Country code (US, GB, IE) |
 | `date` | date | Week start date (YYYY-MM-DD) |
-| `all_traffic_visits` | float | Total weekly visits |
-| `all_traffic_pages_per_visit` | float | Avg pages per session |
-| `all_traffic_average_visit_duration` | float | Avg session duration (seconds) |
-| `all_traffic_bounce_rate` | float | Bounce rate (0-1) |
-| `desktop_visits` | float | Desktop visits |
-| `desktop_pages_per_visit` | float | Desktop pages per session |
-| `desktop_average_visit_duration` | float | Desktop session duration |
-| `desktop_bounce_rate` | float | Desktop bounce rate |
+| `total_visits` | float | Total weekly visits |
+| `total_pages_per_visit` | float | Avg pages per session |
+| `total_traffic_average_visit_duration` | float | Avg session duration (seconds) |
+| `total_traffic_bounce_rate` | float | Bounce rate (0-1) |
+| `PC_visits` | float | Desktop visits |
+| `PC_pages_number_visit` | float | Desktop pages per session |
+| `PC_average_visit_duration` | float | Desktop session duration |
+| `PC_bounce_rate` | float | Desktop bounce rate |
 
 ### Monthly Traffic Data (with Channels)
 
@@ -81,9 +81,9 @@ Expected columns (defined as `MONTHLY_TRAFFIC_SCHEMA`):
 | `domain` | string | Website domain |
 | `country` | string | Country code |
 | `channel` | string | Traffic channel (search, direct, referral, social, etc.) |
-| `yearmonth` | string | Year-month (YYYY-MM) |
-| `desktop_marketing_channels_visits` | float | Desktop visits by channel |
-| `mobile_marketing_channels_visits` | float | Mobile visits by channel |
+| `date_monthl_level` | string | Year-month (YYYY-MM) |
+| `PC_marketing_channels_visits` | float | Desktop visits by channel |
+| `phone_marketing_channels_visits` | float | Mobile visits by channel |
 
 ---
 
@@ -100,7 +100,7 @@ source("src/analysis/R/01_staggered_did_weekly.R")  # Loads w_*.csv files
 ```
 
 **Output:** `data/processed/analysis_panel.csv` with columns:
-- `site_id`, `date`, `traffic`, `treated`, `treatment_start_date`, `group`, `time`
+- `site_id`, `date`, `visits`, `treated`, `treatment_start_date`, `group`, `time`
 
 ---
 
