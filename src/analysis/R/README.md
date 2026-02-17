@@ -57,8 +57,8 @@ install.packages(c(
 ### 2. Prepare Data
 
 Place data files in `data/raw/`:
-- Weekly: `w_2000_mediaos_{US,GB,IE}.csv`
-- Monthly: `m_2000_mediaos_{US,GB,IE}.csv`
+- Weekly: `w_2000_{US,GB,IE}.csv`
+- Monthly: `m_2000_{US,GB,IE}.csv`
 
 See `data/README.md` for data requirements and access.
 
