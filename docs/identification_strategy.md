@@ -145,7 +145,7 @@ If AI Overviews reduce click-through to websites (by answering queries directly)
 
 ### Traffic Data
 - Weekly/monthly panel
-- Columns: `domain`, `country`, `date`, `all_traffic_visits`, `channel` (for heterogeneity)
+- Columns: `DNS`, `country`, `date`, `total_visits`, `channel` (for heterogeneity)
 
 ### Treatment Timing
 - AI Overviews rollout dates by country (from Google announcements)
