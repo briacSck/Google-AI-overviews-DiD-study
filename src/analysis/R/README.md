@@ -21,6 +21,7 @@ This folder contains staggered difference-in-differences estimation code using t
 **Usage:**
 ```r
 source("src/analysis/R/01_staggered_did_weekly.R")
+```
 
 **Outputs:** `output/did_weekly/`
 
